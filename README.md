@@ -14,28 +14,29 @@ experiment with the [Vite+](https://viteplus.dev/) toolchain (Oxlint, Oxfmt, Vit
 and the rest of the unified `vp` CLI). The point was to feel out the workflow end to
 end rather than to ship a polished game, so treat the code as a playground.
 
-## Features
+## Gameplay mechanics
 
-- **Live radar scope** — sweeping scope renders the VIP, Rex, unknown bogeys, and
-  inbound missiles with heading arrows and radar-range gating.
-- **Contact classification** — select any track and classify it as BANDIT, NEUTRAL,
-  or FRIENDLY before weapons release. Correct calls win the engagement; wrong ones
-  cost you.
-- **Escort flight AI** — Rex automatically runs interdiction against tracks you mark
-  as bandits, then falls back into trail formation on the VIP.
-- **Bandit AI** — bandits intercept the VIP or Rex, neutrals/friendlies transit the
-  scope, and unknowns launch first only when you leave them unclassified.
-- **Missiles & damage** — nose-arc/range launch envelopes, cooldowns, guided flight,
-  health tracking for the VIP and escort, plus friendly-fire penalties.
-- **Win / fail states** — deliver the package off-scope to win; lose the package
-  ("PACKAGE LOST") or the escort ("ESCORT DOWN") to fail, with full-mission overlays.
-- **Score & flavor log** — points for splashes and deliveries, dedications for
-  blue-on-blue and package hits, and a running radio-flavor log.
-- **Telemetry panel** — bearing, range, and altitude readouts for the selected track.
-- **Time control** — pause and four simulation speeds (0.5x / 1x / 2x / 4x).
-- **Ace Combat roster** — contacts draw names and signatures from a roster of fictional
-  aircraft drawn from the *Ace Combat 8: Wings of Theve* / Strangereal world
-  (Belka, Osea, Yuktobania, Erusea, ...).
+- **Contact classification** — every bogey carries a hidden true role. You mark it
+  BANDIT, NEUTRAL, or FRIENDLY, and only your call lets Rex engage it.
+- **Weapons release discipline** — Rex fires only on tracks you have classified as
+  bandits, inside nose-arc and range, at the mercy of a per-shooter cooldown.
+- **Escort flight AI** — Rex autonomously intercepts classified bandits, then falls
+  back into trail formation on the package when the scope is clear.
+- **Bandit AI** — bandits hunt the closest of the VIP or Rex; neutrals and friendlies
+  transit the scope; unknown bandits will not fire until you leave them unclassified,
+  so ignoring a track is a real risk.
+- **Missiles & damage** — guided missiles chase their target and can be steered into
+  the wrong flight; VIP, Rex, and bogeys all track health independently.
+- **Friendly fire** — killing a neutral or friendly, or hitting the package with your
+  own missile, tanks your score.
+- **Win / fail conditions** — deliver the package off-scope to win; lose the package
+  ("PACKAGE LOST") or the escort ("ESCORT DOWN") to fail.
+- **Scoring** — points for validated splashes and completed deliveries, penalties for
+  blue-on-blue, friendly kills, and package hits.
+- **Sustained pressure** — shot-down and departing bogeys are replaced, keeping the
+  scope populated for the whole sortie.
+- **Time control** — pause and four simulation speeds (0.5x / 1x / 2x / 4x) to play
+  the engagement at your pace.
 
 ## Controls
 
