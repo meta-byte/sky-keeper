@@ -1,8 +1,10 @@
 # sky-keeper
 
-A radar-scope air-defense game built with React + TypeScript + Vite+. You fly "Rex", an
-escort flight, guiding a VIP ("Package") across the scope while classifying and
-engaging unknown contacts before they can take the package out.
+A radar-scope air-defense game built with React + TypeScript + Vite+. You are
+**Sky-Keeper**, the AWACS controlling the airspace. From the back seat you watch the
+scope, classify unknown contacts, and run the intercept, protecting the escort flight
+"Rex" and the VIP ("Package") as they cross the radar before the bogeys can take the
+package out.
 
 Inspired by [**Ace Combat 8: Wings of Theve**](https://acecombat.com/) — a love letter
 to the Strangereal setting, its nations, and its aircraft roster.
